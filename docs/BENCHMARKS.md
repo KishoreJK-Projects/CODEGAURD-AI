@@ -12,3 +12,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-01-06T15:39:58+05:30`: docs: record model latency and inference telemetry (run #8)
 - `2026-01-08T12:11:45+05:30`: docs: log false-positive filtering metrics (run #9)
 - `2026-01-08T21:25:38+05:30`: test: verify dependency vulnerability detection coverage (run #10)
+- `2026-01-09T18:55:08+05:30`: docs: document vulnerability scoring weights (run #11)
