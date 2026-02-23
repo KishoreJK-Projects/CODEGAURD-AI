@@ -85,3 +85,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-02-18T11:48:02+05:30`: docs: log false-positive filtering metrics (run #81)
 - `2026-02-18T11:02:09+05:30`: test: add unit coverage for secret regex matchers (run #82)
 - `2026-02-20T13:04:26+05:30`: refactor: refine AST parser visitor logic (run #83)
+- `2026-02-23T10:03:46+05:30`: perf: evaluate memory footprint on large repos (run #84)
