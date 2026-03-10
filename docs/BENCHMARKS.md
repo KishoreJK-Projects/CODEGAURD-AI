@@ -109,3 +109,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-03-06T14:45:37+05:30`: refactor: refine AST parser visitor logic (run #105)
 - `2026-03-09T13:38:19+05:30`: docs: document vulnerability scoring weights (run #106)
 - `2026-03-09T18:34:42+05:30`: test: add regression check for lockfile parsing (run #107)
+- `2026-03-10T18:46:58+05:30`: docs: document vulnerability scoring weights (run #108)
