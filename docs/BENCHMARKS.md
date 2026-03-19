@@ -128,3 +128,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-03-18T19:20:46+05:30`: docs: update security benchmark telemetry (run #124)
 - `2026-03-18T09:17:02+05:30`: test: verify dependency vulnerability detection coverage (run #125)
 - `2026-03-19T13:23:30+05:30`: test: add regression check for lockfile parsing (run #126)
+- `2026-03-19T15:35:34+05:30`: docs: document vulnerability scoring weights (run #127)
