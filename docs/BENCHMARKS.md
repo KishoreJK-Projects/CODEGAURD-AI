@@ -177,3 +177,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-04-13T18:48:39+05:30`: chore: record static analyzer performance metrics (run #173)
 - `2026-04-13T17:39:03+05:30`: perf: optimize token scanning threshold (run #174)
 - `2026-04-14T16:02:58+05:30`: test: add regression check for lockfile parsing (run #175)
+- `2026-04-15T13:59:29+05:30`: docs: log false-positive filtering metrics (run #176)
