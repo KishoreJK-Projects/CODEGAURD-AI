@@ -188,3 +188,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-04-20T14:14:57+05:30`: feat: enhance token extraction pipeline logging (run #184)
 - `2026-04-20T11:32:13+05:30`: perf: optimize token scanning threshold (run #185)
 - `2026-04-20T16:13:42+05:30`: perf: evaluate memory footprint on large repos (run #186)
+- `2026-04-22T20:02:12+05:30`: docs: log false-positive filtering metrics (run #187)
