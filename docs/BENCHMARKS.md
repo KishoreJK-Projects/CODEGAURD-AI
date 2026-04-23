@@ -192,3 +192,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-04-22T21:01:27+05:30`: test: verify dependency vulnerability detection coverage (run #188)
 - `2026-04-22T20:59:21+05:30`: docs: log false-positive filtering metrics (run #189)
 - `2026-04-23T12:48:38+05:30`: perf: evaluate memory footprint on large repos (run #190)
+- `2026-04-23T21:20:19+05:30`: docs: document vulnerability scoring weights (run #191)
