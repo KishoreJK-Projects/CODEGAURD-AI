@@ -209,3 +209,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-05-02T14:24:20+05:30`: docs: document vulnerability scoring weights (run #205)
 - `2026-05-04T18:55:48+05:30`: test: verify dependency vulnerability detection coverage (run #206)
 - `2026-05-04T16:53:29+05:30`: perf: optimize token scanning threshold (run #207)
+- `2026-05-04T15:20:44+05:30`: feat: enhance token extraction pipeline logging (run #208)
