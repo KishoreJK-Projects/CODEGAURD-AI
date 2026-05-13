@@ -222,3 +222,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-05-13T21:57:32+05:30`: docs: record model latency and inference telemetry (run #218)
 - `2026-05-13T12:50:14+05:30`: test: verify dependency vulnerability detection coverage (run #219)
 - `2026-05-13T17:52:36+05:30`: docs: log false-positive filtering metrics (run #220)
+- `2026-05-13T18:14:01+05:30`: docs: document vulnerability scoring weights (run #221)
