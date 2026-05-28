@@ -256,3 +256,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-05-28T18:43:09+05:30`: chore: record static analyzer performance metrics (run #252)
 - `2026-05-28T15:41:52+05:30`: style: format code comments and docstrings (run #253)
 - `2026-05-28T17:00:12+05:30`: refactor: refine AST parser visitor logic (run #254)
+- `2026-05-28T18:20:01+05:30`: docs: document vulnerability scoring weights (run #255)
