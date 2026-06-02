@@ -262,3 +262,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-06-01T09:08:41+05:30`: feat: enhance token extraction pipeline logging (run #258)
 - `2026-06-01T17:17:18+05:30`: chore: record static analyzer performance metrics (run #259)
 - `2026-06-02T10:34:37+05:30`: docs: document vulnerability scoring weights (run #260)
+- `2026-06-02T18:06:57+05:30`: test: add regression check for lockfile parsing (run #261)
