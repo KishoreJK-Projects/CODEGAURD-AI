@@ -270,3 +270,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-06-04T21:36:08+05:30`: test: add regression check for lockfile parsing (run #266)
 - `2026-06-04T09:41:24+05:30`: test: add unit coverage for secret regex matchers (run #267)
 - `2026-06-04T18:51:43+05:30`: chore: record static analyzer performance metrics (run #268)
+- `2026-06-05T18:17:57+05:30`: docs: document vulnerability scoring weights (run #269)
