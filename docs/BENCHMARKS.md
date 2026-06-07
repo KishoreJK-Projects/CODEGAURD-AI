@@ -273,3 +273,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-06-05T18:17:57+05:30`: docs: document vulnerability scoring weights (run #269)
 - `2026-06-05T11:52:41+05:30`: chore: sync dependency audit cache (run #270)
 - `2026-06-05T15:06:58+05:30`: style: format code comments and docstrings (run #271)
+- `2026-06-07T16:33:27+05:30`: perf: optimize token scanning threshold (run #272)
