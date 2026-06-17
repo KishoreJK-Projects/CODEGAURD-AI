@@ -291,3 +291,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-06-17T13:26:10+05:30`: docs: update security benchmark telemetry (run #287)
 - `2026-06-17T19:01:14+05:30`: docs: update security benchmark telemetry (run #288)
 - `2026-06-17T20:24:40+05:30`: chore: sync dependency audit cache (run #289)
+- `2026-06-17T21:21:11+05:30`: docs: document vulnerability scoring weights (run #290)
