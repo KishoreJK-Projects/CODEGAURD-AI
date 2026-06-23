@@ -302,3 +302,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-06-22T10:44:09+05:30`: perf: optimize token scanning threshold (run #298)
 - `2026-06-22T12:59:25+05:30`: style: format code comments and docstrings (run #299)
 - `2026-06-22T16:23:26+05:30`: style: format code comments and docstrings (run #300)
+- `2026-06-23T10:00:27+05:30`: docs: document vulnerability scoring weights (run #301)
