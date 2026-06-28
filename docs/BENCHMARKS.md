@@ -310,3 +310,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-06-25T19:54:39+05:30`: test: add regression check for lockfile parsing (run #306)
 - `2026-06-25T15:45:19+05:30`: docs: record model latency and inference telemetry (run #307)
 - `2026-06-26T14:57:17+05:30`: docs: log false-positive filtering metrics (run #308)
+- `2026-06-28T19:53:00+05:30`: test: verify dependency vulnerability detection coverage (run #309)
