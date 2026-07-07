@@ -324,3 +324,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-07-06T18:48:31+05:30`: docs: document vulnerability scoring weights (run #320)
 - `2026-07-06T16:01:45+05:30`: test: verify dependency vulnerability detection coverage (run #321)
 - `2026-07-06T12:29:37+05:30`: chore: record static analyzer performance metrics (run #322)
+- `2026-07-07T13:19:07+05:30`: docs: log false-positive filtering metrics (run #323)
