@@ -329,3 +329,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-07-07T17:23:54+05:30`: docs: document vulnerability scoring weights (run #325)
 - `2026-07-08T16:26:10+05:30`: chore: record static analyzer performance metrics (run #326)
 - `2026-07-09T12:23:31+05:30`: docs: record model latency and inference telemetry (run #327)
+- `2026-07-09T20:31:34+05:30`: perf: optimize token scanning threshold (run #328)
