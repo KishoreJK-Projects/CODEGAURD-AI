@@ -342,3 +342,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-07-17T15:10:50+05:30`: chore: record static analyzer performance metrics (run #338)
 - `2026-07-20T11:19:06+05:30`: test: add regression check for lockfile parsing (run #339)
 - `2026-07-20T15:58:31+05:30`: test: verify dependency vulnerability detection coverage (run #340)
+- `2026-07-20T17:05:14+05:30`: docs: log false-positive filtering metrics (run #341)
