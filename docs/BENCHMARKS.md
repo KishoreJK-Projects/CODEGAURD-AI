@@ -350,3 +350,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-07-23T12:41:52+05:30`: docs: record model latency and inference telemetry (run #346)
 - `2026-07-23T13:37:39+05:30`: test: add unit coverage for secret regex matchers (run #347)
 - `2026-07-24T19:07:07+05:30`: docs: document vulnerability scoring weights (run #348)
+- `2026-07-24T14:34:36+05:30`: test: verify dependency vulnerability detection coverage (run #349)
