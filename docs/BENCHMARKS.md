@@ -377,3 +377,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-08-04T21:53:05+05:30`: test: add unit coverage for secret regex matchers (run #373)
 - `2026-08-04T16:18:59+05:30`: docs: record model latency and inference telemetry (run #374)
 - `2026-08-05T12:12:35+05:30`: perf: evaluate memory footprint on large repos (run #375)
+- `2026-08-05T16:22:06+05:30`: feat: enhance token extraction pipeline logging (run #376)
