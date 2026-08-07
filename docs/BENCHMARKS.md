@@ -378,3 +378,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-08-04T16:18:59+05:30`: docs: record model latency and inference telemetry (run #374)
 - `2026-08-05T12:12:35+05:30`: perf: evaluate memory footprint on large repos (run #375)
 - `2026-08-05T16:22:06+05:30`: feat: enhance token extraction pipeline logging (run #376)
+- `2026-08-07T20:48:58+05:30`: docs: document vulnerability scoring weights (run #377)
