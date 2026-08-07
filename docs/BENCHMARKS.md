@@ -380,3 +380,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-08-05T16:22:06+05:30`: feat: enhance token extraction pipeline logging (run #376)
 - `2026-08-07T20:48:58+05:30`: docs: document vulnerability scoring weights (run #377)
 - `2026-08-07T13:40:39+05:30`: perf: evaluate memory footprint on large repos (run #378)
+- `2026-08-07T14:15:32+05:30`: refactor: refine AST parser visitor logic (run #379)
