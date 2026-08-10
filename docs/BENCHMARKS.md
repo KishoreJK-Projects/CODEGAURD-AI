@@ -384,3 +384,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-08-07T13:49:36+05:30`: refactor: refine AST parser visitor logic (run #380)
 - `2026-08-08T11:34:29+05:30`: test: verify dependency vulnerability detection coverage (run #381)
 - `2026-08-08T18:35:20+05:30`: test: add regression check for lockfile parsing (run #382)
+- `2026-08-10T10:29:58+05:30`: test: add unit coverage for secret regex matchers (run #383)
