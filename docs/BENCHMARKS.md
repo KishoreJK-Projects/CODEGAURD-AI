@@ -387,3 +387,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-08-10T10:29:58+05:30`: test: add unit coverage for secret regex matchers (run #383)
 - `2026-08-10T13:04:29+05:30`: test: add regression check for lockfile parsing (run #384)
 - `2026-08-10T19:46:02+05:30`: test: add regression check for lockfile parsing (run #385)
+- `2026-08-10T12:24:02+05:30`: docs: document vulnerability scoring weights (run #386)
