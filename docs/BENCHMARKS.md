@@ -389,3 +389,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-08-10T19:46:02+05:30`: test: add regression check for lockfile parsing (run #385)
 - `2026-08-10T12:24:02+05:30`: docs: document vulnerability scoring weights (run #386)
 - `2026-08-11T09:54:00+05:30`: feat: enhance token extraction pipeline logging (run #387)
+- `2026-08-12T12:57:39+05:30`: docs: log false-positive filtering metrics (run #388)
