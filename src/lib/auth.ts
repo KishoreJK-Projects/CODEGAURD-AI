@@ -25,5 +25,5 @@ export const authOptions: AuthOptions = {
     },
   },
 
-  secret: process.env.NEXTAUTH_SECRET,
+  secret: process.env.NEXTAUTH_SECRET || "codeguard_default_session_secret_2026",
 };
