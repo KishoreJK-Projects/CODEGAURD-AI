@@ -406,3 +406,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-08-20T13:41:28+05:30`: feat: enhance token extraction pipeline logging (run #402)
 - `2026-08-21T14:25:35+05:30`: docs: record model latency and inference telemetry (run #403)
 - `2026-08-21T17:04:19+05:30`: test: add regression check for lockfile parsing (run #404)
+- `2026-08-21T09:09:04+05:30`: docs: document vulnerability scoring weights (run #405)
