@@ -410,3 +410,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-08-23T16:17:19+05:30`: test: add unit coverage for secret regex matchers (run #406)
 - `2026-08-23T13:23:38+05:30`: perf: optimize token scanning threshold (run #407)
 - `2026-08-23T21:26:34+05:30`: perf: optimize token scanning threshold (run #408)
+- `2026-08-24T12:54:32+05:30`: docs: log false-positive filtering metrics (run #409)
