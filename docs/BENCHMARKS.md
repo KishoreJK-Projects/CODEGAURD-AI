@@ -411,3 +411,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-08-23T13:23:38+05:30`: perf: optimize token scanning threshold (run #407)
 - `2026-08-23T21:26:34+05:30`: perf: optimize token scanning threshold (run #408)
 - `2026-08-24T12:54:32+05:30`: docs: log false-positive filtering metrics (run #409)
+- `2026-08-24T16:58:42+05:30`: feat: enhance token extraction pipeline logging (run #410)
