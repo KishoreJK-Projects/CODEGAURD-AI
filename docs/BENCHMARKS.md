@@ -414,3 +414,4 @@ Automated telemetry records and static analyzer audit history.
 - `2026-08-24T16:58:42+05:30`: feat: enhance token extraction pipeline logging (run #410)
 - `2026-08-24T16:21:56+05:30`: refactor: refine AST parser visitor logic (run #411)
 - `2026-08-24T16:47:44+05:30`: test: add unit coverage for secret regex matchers (run #412)
+- `2026-08-25T10:50:25+05:30`: perf: optimize token scanning threshold (run #413)
