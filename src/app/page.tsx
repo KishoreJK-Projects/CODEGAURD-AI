@@ -39,55 +39,57 @@ export default function Home() {
 
       {/* Navigation */}
       <header className="nav-glass">
-        <Link href="/" className="nav-logo" aria-label="CodeGuard AI Home">
-          <div className="nav-logo-mark">
-            <ShieldCheck size={18} strokeWidth={2.5} />
-          </div>
-          <span className="text-[15px] font-semibold tracking-[-0.02em]">
-            CodeGuard<span className="text-[#7fff6e]">AI</span>
-          </span>
-        </Link>
-
-        <nav className="hidden items-center gap-8 md:flex" aria-label="Main Navigation">
-          <a href="#platform" className="nav-link">Platform</a>
-          <a href="#intelligence" className="nav-link">AI Engine</a>
-          <a href="#security" className="nav-link">Security</a>
-          <a href="#developers" className="nav-link">Developers</a>
-        </nav>
-
-        <div className="hidden items-center gap-3 md:flex">
-          <button
-            onClick={() => {
-              const event = new KeyboardEvent("keydown", { key: "k", ctrlKey: true, bubbles: true });
-              window.dispatchEvent(event);
-            }}
-            className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.03] px-2.5 py-1.5 text-xs text-[#9aa3af] transition hover:border-white/20 hover:text-white"
-            aria-label="Open command palette"
-          >
-            <span>Command Palette</span>
-            <kbd className="rounded bg-white/10 px-1.5 py-0.5 text-[10px] font-mono text-white/70">Ctrl+K</kbd>
-          </button>
-          <a
-            href="/api/auth/signin/github"
-            className="btn btn-primary"
-          >
-            <Github size={15} /> Connect GitHub
-          </a>
-          <Link
-            href="/dashboard"
-            className="btn btn-ghost"
-          >
-            Dashboard <ArrowRight size={14} />
+        <div className="mx-auto flex h-full w-full max-w-7xl items-center justify-between px-6 lg:px-8">
+          <Link href="/" className="nav-logo" aria-label="CodeGuard AI Home">
+            <div className="nav-logo-mark">
+              <ShieldCheck size={18} strokeWidth={2.5} />
+            </div>
+            <span className="text-[15px] font-semibold tracking-[-0.02em]">
+              CodeGuard<span className="text-[#7fff6e]">AI</span>
+            </span>
           </Link>
-        </div>
 
-        <button
-          className="rounded-lg border border-white/10 p-2 text-[#9aa3af] md:hidden"
-          onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label={mobileOpen ? "Close menu" : "Open menu"}
-        >
-          {mobileOpen ? <X size={20} /> : <Menu size={20} />}
-        </button>
+          <nav className="hidden items-center gap-8 md:flex" aria-label="Main Navigation">
+            <a href="#platform" className="nav-link">Platform</a>
+            <a href="#intelligence" className="nav-link">AI Engine</a>
+            <a href="#security" className="nav-link">Security</a>
+            <a href="#developers" className="nav-link">Developers</a>
+          </nav>
+
+          <div className="hidden items-center gap-3 md:flex">
+            <button
+              onClick={() => {
+                const event = new KeyboardEvent("keydown", { key: "k", ctrlKey: true, bubbles: true });
+                window.dispatchEvent(event);
+              }}
+              className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/[0.03] px-2.5 py-1.5 text-xs text-[#9aa3af] transition hover:border-white/20 hover:text-white"
+              aria-label="Open command palette"
+            >
+              <span>Command Palette</span>
+              <kbd className="rounded bg-white/10 px-1.5 py-0.5 text-[10px] font-mono text-white/70">Ctrl+K</kbd>
+            </button>
+            <a
+              href="/api/auth/signin/github"
+              className="btn btn-primary"
+            >
+              <Github size={15} /> Connect GitHub
+            </a>
+            <Link
+              href="/dashboard"
+              className="btn btn-ghost"
+            >
+              Dashboard <ArrowRight size={14} />
+            </Link>
+          </div>
+
+          <button
+            className="rounded-lg border border-white/10 p-2 text-[#9aa3af] md:hidden"
+            onClick={() => setMobileOpen(!mobileOpen)}
+            aria-label={mobileOpen ? "Close menu" : "Open menu"}
+          >
+            {mobileOpen ? <X size={20} /> : <Menu size={20} />}
+          </button>
+        </div>
       </header>
 
       {/* Mobile Menu */}
@@ -220,56 +222,64 @@ export default function Home() {
 
       {/* Trust Strip */}
       <section className="relative z-10 border-y border-white/[0.06] bg-white/[0.015] py-4">
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-8 px-6 text-xs uppercase tracking-[0.2em] text-[#62707e] sm:justify-between lg:px-8">
-          <span className="flex items-center gap-2"><Github size={14} /> GitHub Native OAuth</span>
-          <span className="flex items-center gap-2"><LockKeyhole size={14} /> Zero Token Leakage</span>
-          <span className="flex items-center gap-2"><BrainCircuit size={14} /> Gemini 1.5 Integration</span>
-          <span className="flex items-center gap-2"><ShieldCheck size={14} /> Static Security Analysis</span>
+        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-4 px-6 text-xs uppercase tracking-[0.16em] text-[#9aa3af] sm:grid-cols-4 lg:px-8">
+          <span className="flex items-center justify-center gap-2"><Github size={15} className="text-[#7fff6e]" /> GitHub Native OAuth</span>
+          <span className="flex items-center justify-center gap-2"><LockKeyhole size={15} className="text-[#5fb4ff]" /> Zero Token Leakage</span>
+          <span className="flex items-center justify-center gap-2"><BrainCircuit size={15} className="text-[#b794ff]" /> Gemini 1.5 Engine</span>
+          <span className="flex items-center justify-center gap-2"><ShieldCheck size={15} className="text-[#7fff6e]" /> Static Code Security</span>
         </div>
       </section>
 
       {/* Platform Features Section */}
       <section id="platform" className="relative z-10 mx-auto max-w-7xl px-6 py-28 lg:px-8">
-        <div className="section-header">
-          <span className="section-kicker">Unified Architecture</span>
+        <div className="mx-auto max-w-2xl text-center">
+          <div className="eyebrow mb-4">
+            <span className="pulse-dot" /> Unified Architecture
+          </div>
           <h2 className="text-heading">Engineered for security from the first commit.</h2>
-          <p className="mt-4 text-body">
+          <p className="mt-4 text-body text-[#9aa3af]">
             CodeGuard transforms raw GitHub repositories into actionable intelligence, prioritizing vulnerabilities before pull requests merge.
           </p>
         </div>
 
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
-          <SpotlightCard className="feature-card">
-            <div className="icon-box icon-box-green feature-card-icon">
-              <BrainCircuit size={22} />
+        <div className="mt-16 grid gap-6 md:grid-cols-3">
+          <SpotlightCard className="feature-card flex flex-col justify-between">
+            <div>
+              <div className="icon-box icon-box-green feature-card-icon">
+                <BrainCircuit size={22} />
+              </div>
+              <span className="font-mono text-xs font-semibold text-[#7fff6e]">01 // DEEP SCAN</span>
+              <h3 className="mt-3 text-lg font-bold text-white">Repository Tree Analysis</h3>
+              <p className="mt-2 text-sm leading-relaxed text-[#9aa3af]">
+                Recursively audits file structure, categorizing source code, dependency manifests, sensitive files, and uncommitted artifacts.
+              </p>
             </div>
-            <span className="font-mono text-xs text-[#62707e]">01 // DEEP SCAN</span>
-            <h3 className="mt-4">Repository Tree Analysis</h3>
-            <p>
-              Recursively audits file structure, categorizing source code, dependency manifests, sensitive files, and uncommitted artifacts.
-            </p>
           </SpotlightCard>
 
-          <SpotlightCard className="feature-card">
-            <div className="icon-box icon-box-red feature-card-icon">
-              <LockKeyhole size={22} />
+          <SpotlightCard className="feature-card flex flex-col justify-between">
+            <div>
+              <div className="icon-box icon-box-red feature-card-icon">
+                <LockKeyhole size={22} />
+              </div>
+              <span className="font-mono text-xs font-semibold text-[#ff6b6b]">02 // VULNERABILITY</span>
+              <h3 className="mt-3 text-lg font-bold text-white">Secret & Pattern Detection</h3>
+              <p className="mt-2 text-sm leading-relaxed text-[#9aa3af]">
+                Identifies exposed certificates, private keys, dangerous configuration files, and unprotected credential vectors.
+              </p>
             </div>
-            <span className="font-mono text-xs text-[#62707e]">02 // VULNERABILITY</span>
-            <h3 className="mt-4">Secret & Pattern Detection</h3>
-            <p>
-              Identifies exposed certificates, private keys, dangerous configuration files, and unprotected credential vectors.
-            </p>
           </SpotlightCard>
 
-          <SpotlightCard className="feature-card">
-            <div className="icon-box icon-box-blue feature-card-icon">
-              <Zap size={22} />
+          <SpotlightCard className="feature-card flex flex-col justify-between">
+            <div>
+              <div className="icon-box icon-box-blue feature-card-icon">
+                <Zap size={22} />
+              </div>
+              <span className="font-mono text-xs font-semibold text-[#5fb4ff]">03 // AI REMEDIATION</span>
+              <h3 className="mt-3 text-lg font-bold text-white">Actionable AI Insights</h3>
+              <p className="mt-2 text-sm leading-relaxed text-[#9aa3af]">
+                Feeds sanitized findings into Gemini models for targeted impact assessments, prevention strategies, and safe refactor snippets.
+              </p>
             </div>
-            <span className="font-mono text-xs text-[#62707e]">03 // AI REMEDIATION</span>
-            <h3 className="mt-4">Actionable AI Insights</h3>
-            <p>
-              Feeds sanitized findings into Gemini models for targeted impact assessments, prevention strategies, and safe refactor snippets.
-            </p>
           </SpotlightCard>
         </div>
       </section>
