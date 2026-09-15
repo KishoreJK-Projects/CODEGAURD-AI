@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useRef, useCallback } from "react";
 import { useRouter } from "next/navigation";
+import { signIn } from "next-auth/react";
 import {
   LayoutDashboard,
   Github,
@@ -53,7 +54,7 @@ export default function CommandPalette() {
       description: "Sign in with GitHub OAuth",
       icon: <Github size={14} />,
       group: "Actions",
-      action: () => { window.location.href = "/api/auth/signin/github"; },
+      action: () => { signIn("github", { callbackUrl: "/dashboard" }); },
     },
     {
       id: "security",

@@ -2,6 +2,7 @@
 
 import { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
+import { signOut } from "next-auth/react";
 import {
   ShieldCheck,
   Search,
@@ -169,13 +170,13 @@ export default function DashboardOverview() {
               <span className="hidden sm:inline">Refresh</span>
             </button>
 
-            <a
-              href="/api/auth/signout"
+            <button
+              onClick={() => signOut({ callbackUrl: "/" })}
               className="flex items-center gap-1.5 rounded-lg border border-red-500/20 bg-red-500/10 px-3 py-1.5 text-xs font-medium text-red-400 transition hover:bg-red-500/20 hover:text-red-300"
             >
               <LogOut size={13} />
               <span>Sign Out</span>
-            </a>
+            </button>
           </div>
         </div>
       </header>

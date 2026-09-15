@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { signIn } from "next-auth/react";
 import { useMagnetic } from "@/hooks/useMagnetic";
 import {
   ArrowRight,
@@ -29,7 +30,7 @@ import SpotlightCard from "@/components/ui/SpotlightCard";
 
 export default function Home() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const heroCta = useMagnetic<HTMLAnchorElement>();
+  const heroCta = useMagnetic<HTMLButtonElement>();
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#06080c] text-[#f2f4f7]">
@@ -68,12 +69,12 @@ export default function Home() {
               <span>Command Palette</span>
               <kbd className="rounded bg-white/10 px-1.5 py-0.5 text-[10px] font-mono text-white/70">Ctrl+K</kbd>
             </button>
-            <a
-              href="/api/auth/signin/github"
+            <button
+              onClick={() => signIn("github", { callbackUrl: "/dashboard" })}
               className="btn btn-primary"
             >
               <Github size={15} /> Connect GitHub
-            </a>
+            </button>
             <Link
               href="/dashboard"
               className="btn btn-ghost"
@@ -125,9 +126,15 @@ export default function Home() {
               Developers
             </a>
             <div className="mt-3 flex flex-col gap-2 border-t border-white/10 pt-4">
-              <a href="/api/auth/signin/github" className="btn btn-primary w-full">
+              <button
+                onClick={() => {
+                  setMobileOpen(false);
+                  signIn("github", { callbackUrl: "/dashboard" });
+                }}
+                className="btn btn-primary w-full"
+              >
                 <Github size={15} /> Connect GitHub
-              </a>
+              </button>
               <Link href="/dashboard" className="btn btn-ghost w-full">
                 Go to Dashboard
               </Link>
@@ -161,14 +168,14 @@ export default function Home() {
             </p>
 
             <div className="mt-9 flex flex-wrap items-center gap-4">
-              <a
+              <button
                 ref={heroCta.ref}
                 style={heroCta.style}
-                href="/api/auth/signin/github"
+                onClick={() => signIn("github", { callbackUrl: "/dashboard" })}
                 className="btn btn-primary lg"
               >
                 <Github size={17} /> Connect GitHub <ArrowRight size={15} />
-              </a>
+              </button>
               <Link href="/dashboard" className="btn btn-ghost lg">
                 <Terminal size={16} /> Open Dashboard
               </Link>
@@ -444,9 +451,12 @@ export default function Home() {
               Connect your GitHub account with read-only permissions and run live audits across all your repositories in seconds.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <a href="/api/auth/signin/github" className="btn btn-primary lg">
+              <button
+                onClick={() => signIn("github", { callbackUrl: "/dashboard" })}
+                className="btn btn-primary lg"
+              >
                 <Github size={17} /> Connect GitHub Account
-              </a>
+              </button>
               <Link href="/dashboard" className="btn btn-ghost lg">
                 Open Command Center
               </Link>
