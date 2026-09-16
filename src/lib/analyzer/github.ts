@@ -1,5 +1,19 @@
 import { GitHubFile } from "./types";
 
+function getHeaders(accessToken?: string): Record<string, string> {
+  const headers: Record<string, string> = {
+    Accept: "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28",
+    "User-Agent": "CodeGuard-AI-Scanner",
+  };
+
+  if (accessToken && !accessToken.startsWith("public_user_")) {
+    headers["Authorization"] = `Bearer ${accessToken}`;
+  }
+
+  return headers;
+}
+
 export async function getRepository(
   id: string,
   accessToken: string
@@ -7,11 +21,7 @@ export async function getRepository(
   const response = await fetch(
     `https://api.github.com/repositories/${id}`,
     {
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-        Accept: "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2022-11-28",
-      },
+      headers: getHeaders(accessToken),
       cache: "no-store",
     }
   );
@@ -28,15 +38,10 @@ export async function getRepositoryTree(
   branch: string,
   accessToken: string
 ): Promise<GitHubFile[]> {
-
   const response = await fetch(
     `https://api.github.com/repos/${fullName}/git/trees/${branch}?recursive=1`,
     {
-      headers: {
-        Authorization: `Bearer ${accessToken}`,
-        Accept: "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2022-11-28",
-      },
+      headers: getHeaders(accessToken),
       cache: "no-store",
     }
   );

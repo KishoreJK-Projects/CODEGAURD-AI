@@ -27,9 +27,11 @@ import AuroraBackground from "@/components/effects/AuroraBackground";
 import ParticleField from "@/components/effects/ParticleField";
 import AICore from "@/components/effects/AICore";
 import SpotlightCard from "@/components/ui/SpotlightCard";
+import ConnectModal from "@/components/ui/ConnectModal";
 
 export default function Home() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [connectModalOpen, setConnectModalOpen] = useState(false);
   const heroCta = useMagnetic<HTMLButtonElement>();
 
   return (
@@ -70,7 +72,7 @@ export default function Home() {
               <kbd className="rounded bg-white/10 px-1.5 py-0.5 text-[10px] font-mono text-white/70">Ctrl+K</kbd>
             </button>
             <button
-              onClick={() => signIn("github", { callbackUrl: "/dashboard" })}
+              onClick={() => setConnectModalOpen(true)}
               className="btn btn-primary"
             >
               <Github size={15} /> Connect GitHub
@@ -129,7 +131,7 @@ export default function Home() {
               <button
                 onClick={() => {
                   setMobileOpen(false);
-                  signIn("github", { callbackUrl: "/dashboard" });
+                  setConnectModalOpen(true);
                 }}
                 className="btn btn-primary w-full"
               >
@@ -171,7 +173,7 @@ export default function Home() {
               <button
                 ref={heroCta.ref}
                 style={heroCta.style}
-                onClick={() => signIn("github", { callbackUrl: "/dashboard" })}
+                onClick={() => setConnectModalOpen(true)}
                 className="btn btn-primary lg"
               >
                 <Github size={17} /> Connect GitHub <ArrowRight size={15} />
@@ -452,7 +454,7 @@ export default function Home() {
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <button
-                onClick={() => signIn("github", { callbackUrl: "/dashboard" })}
+                onClick={() => setConnectModalOpen(true)}
                 className="btn btn-primary lg"
               >
                 <Github size={17} /> Connect GitHub Account
@@ -464,6 +466,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ConnectModal
+        isOpen={connectModalOpen}
+        onClose={() => setConnectModalOpen(false)}
+      />
 
       {/* Footer */}
       <footer className="relative z-10 border-t border-white/[0.06] bg-[#06080c] py-8">

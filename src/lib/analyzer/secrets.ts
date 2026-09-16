@@ -40,17 +40,21 @@ export async function scanSecrets(
   path: string,
   accessToken: string
 ): Promise<Finding[]> {
-
   const findings: Finding[] = [];
 
   try {
+    const headers: Record<string, string> = {
+      "User-Agent": "CodeGuard-AI-Scanner",
+    };
+
+    if (accessToken && !accessToken.startsWith("public_user_")) {
+      headers["Authorization"] = `Bearer ${accessToken}`;
+    }
 
     const response = await fetch(
       `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${path}`,
       {
-        headers: {
-          Authorization: `Bearer ${accessToken}`,
-        },
+        headers,
         cache: "no-store",
       }
     );
@@ -62,22 +66,16 @@ export async function scanSecrets(
     const text = await response.text();
 
     for (const pattern of SECRET_PATTERNS) {
-
       if (pattern.regex.test(text)) {
-
         findings.push({
           severity: pattern.severity,
           title: pattern.name,
           description: `${pattern.name} detected in source code.`,
           file: path,
         });
-
       }
-
     }
-
   } catch {}
 
   return findings;
-
 }
